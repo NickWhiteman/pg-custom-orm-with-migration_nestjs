@@ -52,3 +52,27 @@ export class WalletEntity {
   }
 }
 ```
+
+Congratulations to your first entity designed. Now we can use the console command to generate the migration.
+
+**Step4: In order to generate a migration, you need to enter the console command:**
+
+```bash
+npm run migration:generate --migrationName
+```
+
+En route `./src/database/migration` will create a.mjs migration file.
+
+**Step:5 To apply a migration to a database, you must enter a console command:**
+
+```bash
+npm run migration:up
+```
+
+The CLI automatically takes the edge migration and sends a query to the database with the migration.
+
+**In order to roll back the migration, you need to enter the console command:**
+
+```bash
+npm run migration:down
+```
