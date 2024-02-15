@@ -63,6 +63,12 @@ npm run migration:generate --migrationName
 
 En route `./src/database/migration` will create a.mjs migration file.
 
+<img width="450" alt="image" src="https://github.com/NickWhiteman/pg-custom-orm-with-migration_nestjs/assets/66336085/30207d06-3b5e-42c2-91fd-c84ff25d6ba1">
+
+With the following content
+<img width="961" alt="image" src="https://github.com/NickWhiteman/pg-custom-orm-with-migration_nestjs/assets/66336085/8539c451-1f55-4c34-93ae-a083431581a8">
+
+
 **Step:5 To apply a migration to a database, you must enter a console command:**
 
 ```bash
@@ -82,3 +88,28 @@ npm run migration:down
 Interaction with data from the database is based on the principle of an object.
 Therefore, it wasn't the complex abstraction itself that was invented to standardize
 the design of repository classes.
+
+<img width="386" alt="image" src="https://github.com/NickWhiteman/pg-custom-orm-with-migration_nestjs/assets/66336085/b97f88b8-5955-4cda-8387-48f80e2a085e">
+
+So far, the module looks like a separate standalone implementation with its own architecture, cli implementation, and abstraction for working with entty to form repository classes.
+
+**The abstraction for creating repositories is a standardization of the formation of CRUD procedures for the Entity:**
+
+Example method create
+
+<img width="876" alt="image" src="https://github.com/NickWhiteman/pg-custom-orm-with-migration_nestjs/assets/66336085/73c25024-e282-4727-9cb1-9aec770218d8">
+
+In an abstract class, we need to scale this method to form the correct functionality of the orm
+
+<img width="656" alt="image" src="https://github.com/NickWhiteman/pg-custom-orm-with-migration_nestjs/assets/66336085/0b43d027-8386-48cc-91c3-463680b69768">
+
+<img width="668" alt="image" src="https://github.com/NickWhiteman/pg-custom-orm-with-migration_nestjs/assets/66336085/9995e530-80cc-423a-844f-cb739ce95055">
+
+In this way, the implementation of abstraction is used. 
+Later, the repository generation code will be added to the cli and the project itself will be rebuilt into a batch solution
+
+
+
+
+
+
