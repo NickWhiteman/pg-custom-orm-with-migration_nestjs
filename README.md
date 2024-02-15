@@ -76,3 +76,9 @@ The CLI automatically takes the edge migration and sends a query to the database
 ```bash
 npm run migration:down
 ```
+
+### Realization:
+
+Interaction with data from the database is based on the principle of an object.
+Therefore, it wasn't the complex abstraction itself that was invented to standardize
+the design of repository classes.
